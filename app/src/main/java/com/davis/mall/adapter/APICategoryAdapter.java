@@ -14,6 +14,7 @@ import com.davis.mall.ui.note.ActivityRelativeActivity;
 import com.davis.mall.ui.note.AndroidNewFeaturesTestActivity;
 import com.davis.mall.ui.note.AnimationListActivity;
 import com.davis.mall.ui.note.ComponentDetailActivity;
+import com.davis.mall.ui.note.DIYListViewActivity;
 import com.davis.mall.ui.note.DIYViewActivity;
 import com.davis.mall.ui.note.FragmentRelativeActivity;
 import com.davis.mall.ui.note.JinRiTouTiaoPingMuShiPei;
@@ -103,7 +104,7 @@ public class APICategoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
                 break;
             case 22:
-                intent.setClass(mContext, DIYViewActivity.class);
+                intent.setClass(mContext, DIYListViewActivity.class);
                 break;
             case 23:
                 intent.setClass(mContext, RecyclerViewActivity.class);

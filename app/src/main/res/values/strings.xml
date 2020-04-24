@@ -168,4 +168,12 @@
         <item>RecyclerView.</item>
         <item>RecyclerView.</item>
     </string-array>
+    <string-array name="DIY_list">
+        <item>View</item>
+        <item>ViewGroup</item>
+        <item>ViewGroup</item>
+        <item>ViewGroup</item>
+        <item>ViewGroup</item>
+        <item>ViewGroup</item>
+    </string-array>
 </resources>

@@ -34,8 +34,10 @@
         <activity android:name=".ui.SplashActivity"></activity>
         <activity android:name=".ui.note.AnimationListActivity"/>
         <activity android:name=".ui.note.RecyclerViewActivity"/>
+        <activity android:name=".ui.note.FlowLayoutActivity"/>
         <activity android:name=".ui.note.RecycleViewAdapterActivity"/>
         <activity android:name=".ui.note.FragmentTransactionTell"></activity>
+        <activity android:name=".ui.note.DIYListViewActivity"></activity>
         <activity android:name=".ui.SearchGoodsActivity"
             android:launchMode="singleTask"/>
         <activity android:name=".ui.MainActivity"

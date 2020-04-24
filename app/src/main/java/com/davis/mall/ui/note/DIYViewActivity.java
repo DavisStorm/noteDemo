@@ -30,6 +30,6 @@ public class DIYViewActivity extends Activity {
     }
 
     private void init() {
-        mProgressbarCircle.setAngle((float)0.55);
+        mProgressbarCircle.setAngle(0.55f);
     }
 }
