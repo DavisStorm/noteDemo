@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionbar_size">66dp</dimen>
+    <dimen name="page_margin">10dp</dimen>
+    <dimen name="toolbar_label_height">30dp</dimen>
+    <dimen name="refresh_header_height_twitter">20dp</dimen>
+    <dimen name="load_more_footer_height_classic">20dp</dimen>
+</resources>

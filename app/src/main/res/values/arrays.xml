@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="widget_names" >
+        <item>CoordinatorLayout+AppBarLayout+CollapsingToolbarLayout+Toolbar</item>
+        <item>DrawerLayout</item>
+        <item>PopupMenuCompat  //https://www.jianshu.com/p/bd2846be4b93</item>
+        <item>PopupMenu</item>
+        <item>SearchView</item>
+        <item>GridLayout</item>
+        <item>ShareActionProvider</item>
+        <item>Space</item>
+    </string-array>
+
+</resources>

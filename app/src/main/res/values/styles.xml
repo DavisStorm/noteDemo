@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/ToolbarDark</item>
+    </style>
+    <!--BottomNavigationView没有选中的样式 -->
+    <style name="bottom_normal_text">
+        <item name="android:textColor">@color/DARKGRAY</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--BottomNavigationView选中的样式 -->
+    <style name="bottom_selected_text">
+        <item name="android:textColor">@color/DARKGRAY</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="myRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/em_ratingbar_drawable</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:maxHeight">50dp</item>
+    </style>
+
+    <style name="my_dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="dialogstyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+
+    <declare-styleable name="TagCloudView">
+        <attr name="autoScrollMode">
+            <enum name="disable" value="0"/>
+            <enum name="decelerate" value="1"/>
+            <enum name="uniform" value="2"/>
+        </attr>
+        <attr name="manualScroll" format="boolean"/>
+        <attr name="radiusPercent" format="float"/>
+        <attr name="scrollSpeed" format="float"/>
+        <attr name="lightColor" format="color"/>
+        <attr name="darkColor" format="color"/>
+        <attr name="startAngleX" format="float"/>
+        <attr name="startAngleY" format="float"/>
+    </declare-styleable>
+    <!--圆角头像-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+    <style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox">
+        <item name="android:colorControlActivated">@color/RED</item>
+        <item name="android:colorControlNormal">@color/GRAY</item>
+    </style>
+
+</resources>

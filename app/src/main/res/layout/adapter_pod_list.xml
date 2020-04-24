@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="3dp"
+    app:cardElevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_pic"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitCenter"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_pic"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_pod_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BLACK"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_price"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_pod_name">
+                <TextView
+                    android:id="@+id/tv_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="@color/RED"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:id="@+id/tv_price_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/RED"
+                    android:layout_toRightOf="@+id/tv_rmb"
+                    android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:id="@+id/tv_price_cent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/RED"
+                    android:text=".00"
+                    android:layout_toRightOf="@+id/tv_price_main"
+                    android:drawableRight="@drawable/sanse"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="bottom"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_sold_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_price"
+                android:text="5800+件卖出"
+                android:textColor="@color/LIGHTGRAY"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_pj_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_price"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_sold_num"
+                android:text="100%好评"
+                android:textColor="@color/LIGHTGRAY"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_dianpu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="100dp"
+                android:layout_below="@+id/tv_pj_rate"
+                android:text="红豆男装京东自营店"
+                android:textColor="@color/LIGHTGRAY"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:ellipsize="marquee"/>
+
+            <TextView
+                android:id="@+id/tv_dianpu_jd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_pj_rate"
+                android:layout_toRightOf="@+id/tv_dianpu_name"
+                android:drawableRight="@drawable/joinin"
+                android:text="进店"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/BLACK"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

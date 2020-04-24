@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp">
+    <TextView
+        android:id="@+id/tv_keywords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/history_keywords"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/BLACK"
+        android:drawablePadding="18dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/LAVENDER"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_keywords"/>
+</RelativeLayout>

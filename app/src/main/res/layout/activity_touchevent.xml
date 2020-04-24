@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.davis.mall.views.TouchRelativeLayout
+    android:id="@+id/rl_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_anim"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/btn_pressed_red"
+        />
+    <com.davis.mall.views.TouchBigRelativeLayout
+        android:id="@+id/rl_big"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:background="@color/YELLOW">
+
+        <com.davis.mall.views.MytextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="点我"
+            android:background="@color/BLUE"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/WHITE"
+            android:layout_centerVertical="true"
+            />
+    </com.davis.mall.views.TouchBigRelativeLayout>
+</com.davis.mall.views.TouchRelativeLayout>

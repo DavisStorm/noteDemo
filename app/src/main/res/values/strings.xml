@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">DavisMall</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="kuaikan">直播优选</string>
+    <string name="wangyi">今日主推</string>
+    <string name="zhijia">在线导购</string>
+    <string name="manman">二手市场</string>
+    <string name="tengxun">二手市场</string>
+    <string name="press_again_to_exit">再按一次退出程序</string>
+    <string name="data_is_empty">数据为空</string>
+    <string name="not_set">未设置</string>
+    <string name="determine">确认</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="ethintwords">冬季大衣</string>
+    <string name="hint_login_username">用户名</string>
+    <string name="hint_input_password">输入密码</string>
+    <string name="remember_password">记住密码</string>
+    <string name="regist_account">立即注册</string>
+    <string name="button_login">登录</string>
+    <string name="label_third_part_login">第三方登录</string>
+    <array name="category">
+        <item>热门推荐</item>
+        <item>品牌男装</item>
+        <item>内衣配饰</item>
+        <item>家用电器</item>
+        <item>电脑办公</item>
+        <item>手机数码</item>
+        <item>母婴频道</item>
+        <item>家居家纺</item>
+        <item>居家生活</item>
+        <item>个性化妆</item>
+        <item>鞋靴箱包</item>
+        <item>奢侈礼品</item>
+        <item>珠宝饰品</item>
+    </array>
+
+    <!-- ++++++++++++OverScroll Behavior中的Child-->
+    <string name="over_scroll_image">overScrollImage</string>
+    <string name="over_scroll_label">overScrollLabel</string>
+
+
+    <string name="component_property_text">\n\n实用属性
+    \nandroid:animateLayoutChanges布局改变时是否有动画效果
+    \n android:animationCache定义子布局也有动画效果
+    \n android:focusableInTouchMode定义是否可以通过touch获取到焦点
+    \n android:fadeScrollbars滚动条自动隐藏
+    \nandroid:saveEnabled设置是否在窗口冻结时（如旋转屏幕）保存View的数据
+    \nandroid:filterTouchesWhenObscured所在窗口被其它可见窗口遮住时,是否过滤触摸事件
+    \nandroid:soundEffectsEnabled点击或触摸是否有声音效果
+    \nandroid:hapticFeedbackEnabled设置触感反馈
+    \nandroid:layoutAnimation定义布局显示时候的动画
+    \nandroid:tag为布局添加tag方便查找与类似,或者绑定某特定数据
+    \nandroid:fadingEdgeLength 设置边框渐变的长度
+    \nandroid:scrollbarFadeDuration设置滚动条淡入淡出时间
+    \nandroid:scrollbarDefaultDelayBeforeFade设置滚动条N毫秒后开始淡化，以毫秒为单位
+    \nandroid:OverScrollMode滑动到边界时样式
+    \nandroid:textDirection定义文字方向
+    \nandroid:textAlignment文字对齐方式</string>
+    <string name="component_text">1.动态添加控件 view.setLayoutParams(new LinearLayout.LayoutParam)\t//param类型根据父控件选择 mContainerLl.add(view)
+        \n\n 2.是非选择框 都是Button的子类  是否被选中都是checked=”true”表示 ToggleButton 是Button样式但是以显示文字提醒是开还是关 textOn=”开”，textOff=”关” CheckBox  □苹果 属性text=”苹果”  RadioButton  RadioGroup中只能同时选中一个RadioButton如果需要多选请用CheckBox
+        \n\n3.进度条 ProgressBar 属性style=\"?android:attr/progressBarStyleLarge\"  style=\"?android:attr/progressBarStyleSmall\"  style=\"?android: \tattr/progressBarStyleHorizontal\"  设置ProgressBar的外观  android:max=\"5000\"设置总进度 android:progress=\"3000\"当前进度 SeekBar 可以拖动的进度条，需要监听其进度时用这个，ProgressBar没有进度的监听器 RatingBar 星星进度条  android:numStars=\"4\"星星总数  android:rating=\"3.5” 显示几颗星android:stepSize=\"0.3\"  步长默认=0.3
+        \n\n4.图片控件 ImageView 属性 src background scaleType
+        \n\n5.滑动控件 ScrollView  隐藏滑动android:scrollbars=\"none\"  ScrollView只能嵌套一个子控件  如果使用横向滚动条 需要使用HorizontalScrollView标签
+        \n\n6.日期时间选择器 DatePicker 日期选择控件 在代码中结合Calender拿到年月日之后,picker.init设置DatePicker显示时间 TimePicker 时间选择器
+        \n\n7.网页控件 WebView  webView.loadUrl(“”)   webView.setWebViewClient(new WebViewClient(){ }设置点击网络链接 重新在原来的webview中加载新网址
+        \n\n布局总结：LinearLayout 和 RelativeLayout 的属性如何使用使子控件达到布局效果，子控件使用哪些属性进行布局合适
+        \n\n注意：RelativeLayout 不要使用gravity,gravity是重心的意思，只在有方向的容器中生效 \t  LinearLayout 不使用roRightOf alignParentRight等属性，这些属性是基于容器没有方向的前提下，用于相对布局
+        \n\n1.RelativeLayout \t\tandroid:layout_above----------位于给定DI控件之上 \t\tandroid:layout_toRightOf ------位于给定控件右边 \t\tandroid:layout_alignLeft -------左边与给定ID控件的左边对齐   \t\tandroid:layout_alignBaseline----对齐到控件基准线 \t\tandroid:layout_alignParentRight------相对于父靠右 \t\tandroid:layout_centerInParent=\"true\" -------相对于父即垂直又水平居中 \t\tandroid:layout_centerHorizontal=\"true\" -----相对于父即水平居中 注意：这些属性基本上可以瞒住所有实际上的布局开发，那么为什么还用LinearLayout呢？因为对于比较明显的线型布局， \t  LinearLayout书写起来比较简单，理解也容易
+        \n\n2.LinearLayout \t\torientation：定义线型布局方向 \t\tgravity：子控件的排列方式 ，如center_vertical 垂直置中，top 置顶，也可写多个，如 center_horizontal|top \t\tweight：权重 注意，线性布局只需要这些就能做布局了</string>
+    <!--************网络请求出错-->
+    <string-array name="api_category">
+        <item>Component Property</item>
+        <item>Activity</item>
+        <item>Fragment</item>
+        <item>Service</item>
+        <item>Provide</item>
+        <item>BroadCast</item>
+        <item>Intent</item>
+        <item>Permissions</item>
+        <item>Adapter</item>
+        <item>Rxjava Retrofit</item>
+        <item>Event</item>
+        <item>Animation</item>
+        <item>Media Camera</item>
+        <item>Storage</item>
+        <item>Sensor</item>
+        <item>SQLite GreenDao</item>
+        <item>IO</item>
+        <item>widget</item>
+        <item>Android5.0 6.0 7.0 新特性</item>
+        <item>今日头条屏幕适配方案</item>
+        <item>组件化开发注意事项</item>
+        <item>ToolBar</item>
+        <item>自定义view</item>
+        <item>RecyclerView</item>
+    </string-array>
+    <string name="xiahuaxian"><u>替换ListView 和 GridView的 RecycleView</u></string>
+    <string-array name="Animlist">
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>动画加interpolator，插值器</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+        <item>布局写补间动画scale,rotate,translate,alpha,set</item>
+    </string-array>
+    <string-array name="Anim1">
+        <item>scale</item>
+        <item>rotate</item>
+        <item>translate</item>
+        <item>alpha</item>
+        <item>set</item>
+        <item>scale2</item>
+    </string-array>
+    <string-array name="Anim2">
+        <item>自定义</item>
+        <item>AccelerateDecelerateInterpolator</item>
+        <item>AnticipateInterpolator</item>
+        <item>PathInterpolator</item>
+        <item>BounceInterpolator</item>
+        <item>LinearInterpolator</item>
+        <item>OvershootInterpolator</item>
+        <item>AnticipateOvershootInterpolator</item>
+        <item>AccelerateInterpolator</item>
+        <item>DecelerateInterpolator</item>
+        <item>CycleInterpolator</item>
+    </string-array>
+
+    <string-array name="Recyclerview_list">
+        <item>RecyclerView.Adapter</item>
+        <item>RecyclerView.</item>
+        <item>RecyclerView.</item>
+        <item>RecyclerView.</item>
+        <item>RecyclerView.</item>
+        <item>RecyclerView.</item>
+        <item>RecyclerView.</item>
+        <item>RecyclerView.</item>
+    </string-array>
+</resources>

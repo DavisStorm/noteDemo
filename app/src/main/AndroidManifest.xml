@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.davis.mall">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MallApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        >
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360"/>
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640"/>
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".ui.note.ActivityRelativeActivity"></activity>
+        <activity android:name=".ui.note.AndroidNewFeaturesTestActivity"></activity>
+        <activity android:name=".ui.note.ComponentDetailActivity"></activity>
+        <activity android:name=".ui.note.DemoActivity"></activity>
+        <activity android:name=".ui.note.DIYViewActivity"></activity>
+        <activity android:name=".ui.note.JinRiTouTiaoPingMuShiPei"></activity>
+        <activity android:name=".ui.note.ToolBarUses"></activity>
+        <activity android:name=".ui.note.WidgetTestActivity"></activity>
+        <activity android:name=".ui.note.FragmentRelativeActivity"></activity>
+        <activity android:name=".ui.note.Animatio1Activity"></activity>
+        <activity android:name=".ui.note.Animatio2Activity"></activity>
+        <activity android:name=".ui.SplashActivity"></activity>
+        <activity android:name=".ui.note.AnimationListActivity"/>
+        <activity android:name=".ui.note.RecyclerViewActivity"/>
+        <activity android:name=".ui.note.RecycleViewAdapterActivity"/>
+        <activity android:name=".ui.note.FragmentTransactionTell"></activity>
+        <activity android:name=".ui.SearchGoodsActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.MainActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.LoginActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.PodListActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.PODDetailActivity" />
+        <activity android:name=".ui.GouWuCarActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.TouEventActivity" />
+        <activity
+            android:name=".ui.NoteActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

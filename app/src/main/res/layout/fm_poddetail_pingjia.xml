@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITESMOKEHEAVY">
+
+    <RelativeLayout
+        android:id="@+id/rl_pingjia"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/WHITE"
+        android:paddingLeft="20dp"
+        android:paddingBottom="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_pingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="评价"
+            android:textColor="@color/BLACK"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_pingjia"
+            android:text="200+"
+            android:textColor="@color/BLACK"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="好评度98%"
+            android:textColor="@color/GRAY"
+            android:textSize="14sp"
+            android:paddingRight="5dp"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_pingjia"/>
+</RelativeLayout>

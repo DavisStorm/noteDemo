@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/LIGHTGRAY2"
+    android:orientation="vertical"
+    android:paddingBottom="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_bottomround"
+        android:paddingLeft="20dp"
+        android:paddingTop="4dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_price"
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/tv_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:text="¥"
+                android:textColor="@color/RED"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_pricemain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@id/tv_rmb"
+                android:text="598"
+                android:textColor="@color/RED"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_pricecent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@id/tv_pricemain"
+                android:text=".00"
+                android:textColor="@color/RED"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/img_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/love"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/tv_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_love"
+                    android:text="关注"
+                    android:textColor="@color/BLACK"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_jiangjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/rl_guanzhu">
+
+                <ImageView
+                    android:id="@+id/img_cutnotice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cutprice"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/tv_cutnotice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_cutnotice"
+                    android:text="降价通知"
+                    android:textColor="@color/BLACK"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_price"
+            android:layout_marginTop="12dp"
+            android:text="花花公子2019冬季新款羽绒服男士立领短款轻薄羽绒袄中青年商务休闲防寒保暖上衣男装时尚百搭外套爸爸装 红色 963 180"
+            android:textColor="@color/BLACK"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_youhui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_card"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠"
+            android:textColor="@color/BLACK"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_lingquan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_peach_rec"
+                android:padding="1dp"
+                android:text="领券"
+                android:textColor="@color/holo_red_light"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_youhui_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tv_lingquan"
+                android:background="@drawable/bg_red_rec"
+                android:padding="1dp"
+                android:text="满59减2"
+                android:textColor="@color/holo_red_light"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_duomaiyouhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lingquan"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_peach_rec"
+                android:ellipsize="marquee"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:text="多买优惠"
+                android:textColor="@color/holo_red_light"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_youhui_morepod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lingquan"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tv_duomaiyouhui"
+                android:ellipsize="marquee"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:text="满2件，总价打9折；满3件，总价打8折"
+                android:textColor="@color/BLACK"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhankai" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/rl_yixuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已选"
+                android:textColor="@color/BLACK"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_tv_yixuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="YSB红色，170/M，1件"
+                android:textColor="@color/BLACK" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zhankai" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="3dp"
+            android:background="@color/LIGHTGRAY" />
+
+        <LinearLayout
+            android:id="@+id/ll_songzhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送至"
+                android:textColor="@color/BLACK"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/img_location"
+                    android:ellipsize="marquee"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:text="上海市场北路58弄宝辰共和家园北区4号楼902 卡三等奖阿卡时间段"
+                    android:textColor="@color/BLACK"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_xianhuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_location"
+                    android:layout_marginTop="10dp"
+                    android:text="现货"
+                    android:textColor="@color/RED"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_delivertime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_location"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/tv_xianhuo"
+                    android:text="，今日15::00前完成下单,预计1月15日17:30前发货"
+                    android:textColor="@color/BLACK"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zhankai" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="3dp"
+            android:background="@color/LIGHTGRAY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/tv_yunfei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运费"
+                android:textColor="@color/BLACK"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_mianyunfei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_yunfei"
+                android:text="免运费"
+                android:textColor="@color/BLACK"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pingjia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_pingjia"
+            android:layout_width="match_parent"
+            android:layout_height="22dp">
+
+            <TextView
+                android:id="@+id/tv_pingjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="评价"
+                android:textColor="@color/BLACK"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_pingjia"
+                android:text="200+"
+                android:textColor="@color/BLACK"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_haopd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:text=">"
+                android:textColor="@color/BLACK"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/tv_haopd"
+                android:text="好评度98%"
+                android:textColor="@color/GRAY"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pingjiafirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/img_pj_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/touxiang" />
+
+            <TextView
+                android:id="@+id/tv_pj_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/img_pj_icon"
+                android:text="潘玮柏"
+                android:textColor="@color/BLACK"
+                android:textSize="13sp" />
+            <RatingBar
+                android:id="@+id/rg_pj_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                style="@style/myRatingBar"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/tv_pj_name"
+                android:layout_toRightOf="@+id/img_pj_icon"
+                android:isIndicator="true"
+                android:rating="5"
+                android:stepSize="1"
+                android:numStars="5"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_pj_content"
+                android:layout_below="@+id/img_pj_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="羽绒服蛮厚实的，保暖效果非常好，防风保暖，做工也不错，走线都很均匀紧密。面料舒适，尺码标准，穿着正合适！很满意"
+                android:textColor="@color/BLACK"/>
+
+            <TextView
+                android:id="@+id/tv_pj_kuanshi"
+                android:layout_below="@+id/tv_pj_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="颜色：上青 972 型号：180"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/GRAY"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_pingjiafirst3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/img_pj_icon3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/touxiang" />
+
+            <TextView
+                android:id="@+id/tv_pj_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/img_pj_icon3"
+                android:text="潘玮柏"
+                android:textColor="@color/BLACK"
+                android:textSize="13sp" />
+            <RatingBar
+                android:id="@+id/rg_pj_ratingbar3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                style="@style/myRatingBar"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/tv_pj_name3"
+                android:layout_toRightOf="@+id/img_pj_icon3"
+                android:isIndicator="true"
+                android:rating="5"
+                android:stepSize="1"
+                android:numStars="5"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_pj_content3"
+                android:layout_below="@+id/img_pj_icon3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="羽绒服蛮厚实的，保暖效果非常好，防风保暖，做工也不错，走线都很均匀紧密。面料舒适，尺码标准，穿着正合适！很满意"
+                android:textColor="@color/BLACK"/>
+
+            <TextView
+                android:id="@+id/tv_pj_kuanshi2"
+                android:layout_below="@+id/tv_pj_content3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="颜色：上青 972 型号：180"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/GRAY"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_pingjia2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/img_pj_icon2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/touxiang" />
+
+            <TextView
+                android:id="@+id/tv_pj_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/img_pj_icon2"
+                android:text="潘玮柏"
+                android:textColor="@color/BLACK"
+                android:textSize="13sp" />
+            <RatingBar
+                android:id="@+id/rg_pj_ratingbar2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                style="@style/myRatingBar"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/tv_pj_name2"
+                android:layout_toRightOf="@+id/img_pj_icon2"
+                android:isIndicator="true"
+                android:rating="5"
+                android:stepSize="1"
+                android:numStars="5"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_pj_content2"
+                android:layout_below="@+id/img_pj_icon2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="羽绒服蛮厚实的，保暖效果非常好，防风保暖，做工也不错，走线都很均匀紧密。面料舒适，尺码标准，穿着正合适！很满意"
+                android:textColor="@color/BLACK"/>
+
+            <TextView
+                android:id="@+id/tb_pj_kuanshi2"
+                android:layout_below="@+id/tv_pj_content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="颜色：上青 972 型号：180"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/GRAY"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_checkallpj"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_btn_round_greysolid"
+            android:text="查看全部评价"
+            android:textColor="@color/BLACK"
+            android:textSize="14sp"
+            android:padding="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_point_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一、将fragment添加到activity"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tv_point_one_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. 在布局xml文件中添加fragment标签"
+        android:layout_below="@+id/tv_point_one"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_point_one_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. FragmentManager将fragment添加到activity的某一个容器中"
+        android:layout_below="@+id/tv_point_one_one"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/point_one_two_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FragmentManager fragmentManager = getFragmentManager()"
+        android:layout_below="@+id/tv_point_one_two"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/point_one_two_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()"
+        android:layout_below="@+id/point_one_two_line1"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/point_one_two_line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fragmentTransaction.add(R.id.fragment_container, fragment)"
+        android:layout_below="@+id/point_one_two_line2"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/point_one_two_line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fragmentTransaction.commit()"
+        android:layout_below="@+id/point_one_two_line3"
+        android:layout_marginLeft="5dp"
+        />
+    <LinearLayout
+        android:id="@+id/rl_fragmentTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/point_one_two_line4">
+        <TextView
+            android:id="@+id/point_one_two_line5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. fragmentTransaction常用方法"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btn_fragmentTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="go to know"
+            android:layout_toRightOf="@+id/point_one_two_line5"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_card"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_pingjiafirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/img_pj_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/tv_pj_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img_pj_icon"
+            android:text="潘玮柏"
+            android:textColor="@color/BLACK"
+            android:textSize="13sp" />
+
+        <RatingBar
+            android:id="@+id/rg_pj_ratingbar"
+            style="@style/myRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_pj_name"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img_pj_icon"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/tv_pj_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_pj_icon"
+            android:layout_marginTop="5dp"
+            android:text="羽绒服蛮厚实的，保暖效果非常好，防风保暖，做工也不错，走线都很均匀紧密。面料舒适，尺码标准，穿着正合适！很满意"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/tv_pj_kuanshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pj_content"
+            android:layout_marginTop="5dp"
+            android:text="颜色：上青 972 型号：180"
+            android:textColor="@color/GRAY"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

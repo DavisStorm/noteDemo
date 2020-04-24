@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_souye"
+        android:icon="@drawable/shouye"
+        android:title="首页"/>
+    <item
+        android:id="@+id/tab_fenlei"
+        android:icon="@drawable/fenlei"
+        android:title="分类"/>
+    <item
+        android:id="@+id/tab_faxian"
+        android:icon="@drawable/faxian"
+        android:title="发现"/>
+    <item
+        android:id="@+id/tab_gouwuche"
+        android:icon="@drawable/gouwuche"
+        android:title="购物车"/>
+    <item
+        android:id="@+id/tab_wode"
+        android:icon="@drawable/wode"
+        android:title="我的"/>
+</menu>

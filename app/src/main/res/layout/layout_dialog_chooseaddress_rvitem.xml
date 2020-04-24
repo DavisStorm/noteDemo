@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/tv_address_des"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="湖北省荆门市沙洋县五里铺镇"
+    android:drawableLeft="@drawable/location_black"
+    android:drawablePadding="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:textSize="18sp"
+    android:textColor="@color/BLACK"
+    />
