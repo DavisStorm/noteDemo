@@ -159,8 +159,8 @@
     </string-array>
 
     <string-array name="Recyclerview_list">
+        <item>RecyclerView.layoutManager</item>
         <item>RecyclerView.Adapter</item>
-        <item>RecyclerView.</item>
         <item>RecyclerView.</item>
         <item>RecyclerView.</item>
         <item>RecyclerView.</item>

@@ -75,9 +75,10 @@ public class RecyclerViewActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 switch (getLayoutPosition()) {
                     case 0://RecycleView.Adapter
-                        intent.setClass(RecyclerViewActivity.this,RecycleViewAdapterActivity.class);
+                        intent.setClass(RecyclerViewActivity.this,RecycleViewLayoutManagerActivity.class);
                         break;
                     case 1:
+                        intent.setClass(RecyclerViewActivity.this,RecycleViewAdapterActivity.class);
                         break;
                 }
                 startActivity(intent);

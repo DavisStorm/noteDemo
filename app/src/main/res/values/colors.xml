@@ -11,6 +11,7 @@
     <color name="textbg_blue">#1296db</color>
     <color name="ToolbarDark">#1D8CE0</color>
     <color name="ToolbarLight">#58B7FF</color>
+    <color name="ToolbarLighter">#9ED0F6</color>
     <color name="tab_text_color">#727272</color>
     <color name="tab_indicator_color">#ffb5a1</color>
     <color name="tab_selected_text_color">#ffb5a1</color>

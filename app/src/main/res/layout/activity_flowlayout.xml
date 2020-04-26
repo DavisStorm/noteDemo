@@ -16,63 +16,109 @@
             android:id="@+id/flowlayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/bg_action_bar_lighter"
             android:layout_below="@+id/et_search">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/GREEN"
                 android:text="男装阿达"/>
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                style="@style/flowlayout_tv"
+                android:gravity="center"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/YELLOW"
                 android:text="化妆品奥术大师"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/RED"
                 android:text="男装阿达"/>
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:gravity="center"
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/GREENYELLOW"
                 android:text="男装奥术大师多"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/holo_red_light"
                 android:text="男装阿达"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/YELLOWGREEN"
                 android:text="男装奥术大师"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/BLUE"
                 android:text="男装阿萨德"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/BLUEVIOLET"
                 android:text="男装阿达"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/PURPLE"
                 android:text="男装奥术大师大"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/BLANCHEDALMOND"
                 android:text="男装但是广东分公司"/>
             <TextView
+                android:id="@+id/tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="男装阿萨德阿萨德"/>
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/LAWNGREEN"
+                android:text="男装阿"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="男装阿萨德阿萨德"/>
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/KHAKI"
+                android:text="男装阿萨德阿萨德1"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="男装阿萨德阿斯达"/>
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/TEAL"
+                android:text="男装阿萨德阿斯达2"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="男装阿萨德啊啊啊啊啊啊"/>
+                style="@style/flowlayout_tv"
+                android:background="@drawable/bg_round_yellow"
+                android:backgroundTint="@color/TEAL"
+                android:text="男装阿萨德阿斯达3"/>
         </com.davis.mall.ui.note.FlowLayout>
 
 </RelativeLayout>
