@@ -170,8 +170,8 @@
     </string-array>
     <string-array name="DIY_list">
         <item>View</item>
-        <item>ViewGroup</item>
-        <item>ViewGroup</item>
+        <item>FlowLayout</item>
+        <item>FlowerLayout</item>
         <item>ViewGroup</item>
         <item>ViewGroup</item>
         <item>ViewGroup</item>

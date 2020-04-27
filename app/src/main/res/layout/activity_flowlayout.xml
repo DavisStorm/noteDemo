@@ -28,6 +28,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="50dp"
+                android:paddingLeft="20dp"
                 style="@style/flowlayout_tv"
                 android:gravity="center"
                 android:background="@drawable/bg_round_yellow"
