@@ -13,6 +13,7 @@ import com.davis.mall.bean.PODDetaliBean;
 import com.davis.mall.utils.BaseViewHolder;
 import com.davis.mall.utils.StringUtil;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,7 +24,7 @@ import java.util.List;
 public class PodListRvAdapter extends BaseQuickAdapter<PODDetaliBean.DataBean.ListBean> {
     private Context mContext;
     public PodListRvAdapter(Context context,List<PODDetaliBean.DataBean.ListBean> data) {
-        super(R.layout.adapter_pod_list,data);
+        super(R.layout.adapter_pod_list,data == null? new ArrayList<>():data);
         mContext = context;
     }
 
@@ -55,7 +56,7 @@ public class PodListRvAdapter extends BaseQuickAdapter<PODDetaliBean.DataBean.Li
         if(mData!=null && mData.size()>0) {
             mData.clear();
         }
-        mData = data;
+        mData = data == null?new ArrayList<>():data;
         notifyDataSetChanged();
     }
 
@@ -64,7 +65,7 @@ public class PodListRvAdapter extends BaseQuickAdapter<PODDetaliBean.DataBean.Li
         if(mData!=null && mData.size()>0) {
             mData.clear();
         }
-        mData = data;
+        mData = data == null?new ArrayList<>():data;
         notifyItemRangeChanged(positionStart,itemCount);
     }
 }

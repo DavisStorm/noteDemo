@@ -12,6 +12,7 @@ import com.davis.mall.bean.AllFavorBean;
 import com.davis.mall.ui.PODDetailActivity;
 import com.davis.mall.utils.BaseViewHolder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,7 +24,7 @@ public class AllFavorAdapter extends BaseQuickAdapter<AllFavorBean.DataBean.List
 
 
     public AllFavorAdapter(List<AllFavorBean.DataBean.ListBean> data) {
-        super(R.layout.af_adapter,data);
+        super(R.layout.af_adapter,data==null?new ArrayList<>():data);
     }
 
     @Override
@@ -68,14 +69,14 @@ public class AllFavorAdapter extends BaseQuickAdapter<AllFavorBean.DataBean.List
     }
 
     public void setData(List<AllFavorBean.DataBean.ListBean> list) {
-        mData = list;
+        mData = list==null?new ArrayList<>():list;
         notifyDataSetChanged();
     }
     public void setDataWithPartDataChange(List<AllFavorBean.DataBean.ListBean> data, int positionStart, int itemCount){
         if(mData!=null && mData.size()>0) {
             mData.clear();
         }
-        mData = data;
+        mData = data==null?new ArrayList<>():data;
         notifyItemRangeChanged(positionStart,itemCount);
     }
 }

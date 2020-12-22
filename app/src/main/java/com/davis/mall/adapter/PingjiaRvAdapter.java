@@ -10,6 +10,7 @@ import com.davis.mall.R;
 import com.davis.mall.bean.PingJiaBean;
 import com.davis.mall.utils.BaseViewHolder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,7 +21,7 @@ import java.util.List;
 public class PingjiaRvAdapter extends BaseQuickAdapter<PingJiaBean.DataBean.ListBean> {
     Context context;
     public PingjiaRvAdapter(Context context,List<PingJiaBean.DataBean.ListBean> data) {
-        super(R.layout.adapter_pingjia,data);
+        super(R.layout.adapter_pingjia,data ==null?new ArrayList<>():data);
         this.context= context;
     }
 

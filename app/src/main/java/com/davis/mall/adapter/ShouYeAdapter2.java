@@ -19,6 +19,7 @@ import com.davis.mall.bean.ShouYeTuijianBean;
 import com.davis.mall.views.MarqueTextView;
 import com.davis.mall.views.MyRecycleView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -28,7 +29,7 @@ import java.util.List;
  */
 public class ShouYeAdapter2 extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private int windowWidth;
-    private List<ShouYeTuijianBean.DataBean.TreeBean> beanlist;
+    private List<ShouYeTuijianBean.DataBean.TreeBean> beanlist = new ArrayList<>();
     private Context context;
 
     public ShouYeAdapter2(Context context, List<ShouYeTuijianBean.DataBean.TreeBean> beanlist, int width) {
@@ -95,6 +96,7 @@ public class ShouYeAdapter2 extends RecyclerView.Adapter<RecyclerView.ViewHolder
     }
 
     public void setData(List<ShouYeTuijianBean.DataBean.TreeBean> dataList) {
+        if (dataList ==null ||dataList.size()==0) return;
         beanlist = dataList;
         notifyDataSetChanged();
     }

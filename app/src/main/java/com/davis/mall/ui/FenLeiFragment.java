@@ -21,6 +21,7 @@ import com.davis.mall.interfac.IFenLeiFragment;
 import com.davis.mall.presenter.FenLeiFragmentPresenter;
 import com.davis.mall.ui.base.BaseFragment;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -132,7 +133,7 @@ public class FenLeiFragment extends BaseFragment<FenLeiFragmentPresenter> implem
     @Override
     public void requestSuccess1(CategoryMuluBean categoryBean) {
         mListBeans = categoryBean.getData().getList();
-        mCatogeryAdapter.setNewData(categoryBean.getData().getList());
+        mCatogeryAdapter.setNewData(categoryBean.getData().getList() ==null? new ArrayList<>():categoryBean.getData().getList());
     }
 
     @Override

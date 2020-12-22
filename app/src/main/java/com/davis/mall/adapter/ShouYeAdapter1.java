@@ -66,6 +66,7 @@ public class ShouYeAdapter1 extends RecyclerView.Adapter<RecyclerView.ViewHolder
     }
 
     public void setData(List<ShouYeCategoryBean.DataList> dataList) {
+        if (dataList ==null || dataList.size() ==0) return;
         beanlist = dataList;
         notifyDataSetChanged();
     }

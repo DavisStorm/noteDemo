@@ -22,7 +22,7 @@ public class FuwuzekouRvAdapter extends BaseQuickAdapter<FUWUZEKOUbEAN.DataBean.
     public ArrayList<String> currentSelected=new ArrayList<>();
 
     public FuwuzekouRvAdapter(IPodListActivity podListActivity, List<FUWUZEKOUbEAN.DataBean.ListBean> dataList) {
-        super(R.layout.adapter_fuwuzekou,dataList);
+        super(R.layout.adapter_fuwuzekou,dataList==null?new ArrayList<>():dataList);
     }
 
     @Override

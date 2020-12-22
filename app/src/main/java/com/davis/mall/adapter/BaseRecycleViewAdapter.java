@@ -5,6 +5,7 @@ import android.view.View;
 import com.davis.mall.R;
 import com.davis.mall.utils.BaseViewHolder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BaseRecycleViewAdapter extends BaseQuickAdapter<String> {
@@ -12,7 +13,7 @@ public class BaseRecycleViewAdapter extends BaseQuickAdapter<String> {
     private final OnClickLisener mLisener;
 
     public BaseRecycleViewAdapter(List<String> data, OnClickLisener lisener) {
-        super(R.layout.tv_simple,data);
+        super(R.layout.tv_simple,data==null?new ArrayList<>():data);
         mLisener = lisener;
     }
 

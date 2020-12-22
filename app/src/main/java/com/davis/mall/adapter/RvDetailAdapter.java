@@ -24,6 +24,7 @@ import com.davis.mall.bean.CategoryBannerBean;
 import com.davis.mall.bean.CategoryBean;
 import com.davis.mall.utils.BaseViewHolder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -64,16 +65,18 @@ public class RvDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
         if (holder instanceof HeaderHolder) {
             if (mBannerData != null) {
-                final List<CategoryBannerBean.DataBean.ListBean> mBannerList = mBannerData.getList();
+                final List<CategoryBannerBean.DataBean.ListBean> mBannerList = mBannerData.getList()==null?
+                        new ArrayList<>():mBannerData.getList();
                 final HeaderHolder headholder = (HeaderHolder) holder;
                 PagerAdapter pagerAdapter = createPagerAdapter(mBannerList);
                 headholder.mVp.setAdapter(pagerAdapter);
                 pagerAdapter.notifyDataSetChanged();
                 //轮播
-                if(mRunnableaaa==null) {
+                if (mRunnableaaa == null) {
                     final int[] num = {0};
                     mRunnableaaa = new Runnable() {
                         public void run() {
+                            if (mBannerList==null || mBannerList.size() ==0) return;
                             num[0]++;
                             headholder.mVp.setVisibility(View.VISIBLE);
                             // 设置初始 position
@@ -93,7 +96,7 @@ public class RvDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             BaseQuickAdapter quickAdapter = createQuickAdapter(position - 1);
 
 //          WrapContentLayoutManager manager2 = new WrapContentLayoutManager(quickAdapter,contentHolder.view.getContext(),3);
-            GridLayoutManager manager2 = new GridLayoutManager(contentHolder.view.getContext(),3);
+            GridLayoutManager manager2 = new GridLayoutManager(contentHolder.view.getContext(), 3);
             manager2.setOrientation(GridLayoutManager.VERTICAL);
             contentHolder.rv_inner.setLayoutManager(manager2);
             contentHolder.rv_inner.setAdapter(quickAdapter);
@@ -104,17 +107,17 @@ public class RvDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         CategoryBean.DataBean.TreeBean treeBean = mData.get(position);
         final List<CategoryBean.DataBean.TreeBean.ChildrenTreeBean> children_tree
                 = treeBean.getChildren_tree();
-                BaseQuickAdapter<CategoryBean.DataBean.TreeBean.ChildrenTreeBean> quickAdapter = new BaseQuickAdapter<CategoryBean.DataBean.TreeBean.ChildrenTreeBean>
-                (R.layout.inneradapter_category,children_tree) {
+        BaseQuickAdapter<CategoryBean.DataBean.TreeBean.ChildrenTreeBean> quickAdapter = new BaseQuickAdapter<CategoryBean.DataBean.TreeBean.ChildrenTreeBean>
+                (R.layout.inneradapter_category, children_tree == null ? new ArrayList<>() : children_tree) {
 
             @Override
             protected void convert(final BaseViewHolder helper, final CategoryBean.DataBean.TreeBean.ChildrenTreeBean item) {
-                helper.setText(R.id.tv_inner_name,item.getThird_class_name());
+                helper.setText(R.id.tv_inner_name, item.getThird_class_name());
                 ImageView inner_iv = helper.getView(R.id.inner_adapter_img);
-                RequestOptions options =new RequestOptions()
+                RequestOptions options = new RequestOptions()
                         .placeholder(R.drawable.loading)//加载成功之前占位图
                         .error(R.drawable.loading)//加载错误之后的错误图
-                        .override(300,300)//指定图片的尺寸
+                        .override(300, 300)//指定图片的尺寸
                         .fitCenter()
                         .diskCacheStrategy(DiskCacheStrategy.NONE)//跳过磁盘缓存
                         .diskCacheStrategy(DiskCacheStrategy.RESOURCE);//只缓存最终的图片 ;
@@ -123,7 +126,7 @@ public class RvDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 rl_Container.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        mlisener.onContentItemClick(item.getThird_class_id(),3,item.getThird_class_name());//3表示三级分类
+                        mlisener.onContentItemClick(item.getThird_class_id(), 3, item.getThird_class_name());//3表示三级分类
 
                     }
                 });
@@ -152,10 +155,10 @@ public class RvDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 RelativeLayout rl_out = (RelativeLayout) LayoutInflater.from(mContext).inflate
                         (R.layout.banner_img_viewpager, container, false);
                 ImageView imgView = (ImageView) rl_out.getChildAt(0);
-                RequestOptions options =new RequestOptions()
+                RequestOptions options = new RequestOptions()
                         .placeholder(R.drawable.loading)//加载成功之前占位图
                         .error(R.drawable.loading)//加载错误之后的错误图
-                        .override(300,300)//指定图片的尺寸
+                        .override(300, 300)//指定图片的尺寸
                         .centerCrop()
                         .diskCacheStrategy(DiskCacheStrategy.NONE);//跳过磁盘缓存
                 Glide.with(container.getContext()).load(bannerlist.get(position).getAdimgurls())
@@ -175,7 +178,7 @@ public class RvDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public void onDetachedFromRecyclerView(@NonNull RecyclerView recyclerView) {
         handler.removeCallbacksAndMessages(null);
-        mRunnableaaa=null;
+        mRunnableaaa = null;
 
     }
 
@@ -226,7 +229,7 @@ public class RvDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         public ContentHolder(View view) {
             super(view);
-            this.view= view;
+            this.view = view;
             mTv_name = view.findViewById(R.id.tv_category_second);
             rv_inner = view.findViewById(R.id.rv_inner);
         }
@@ -236,8 +239,9 @@ public class RvDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         this.mlisener = mlisener;
     }
 
-    public  interface RvDetailOnItemClickLisener  {
-        void onContentItemClick(String cate_id,int cate_class,String name);
+    public interface RvDetailOnItemClickLisener {
+        void onContentItemClick(String cate_id, int cate_class, String name);
+
         void onHeadClick(String position);
     }
 }

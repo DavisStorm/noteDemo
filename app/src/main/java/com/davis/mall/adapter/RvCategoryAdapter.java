@@ -13,6 +13,7 @@ import com.davis.mall.R;
 import com.davis.mall.bean.CategoryMuluBean;
 import com.davis.mall.utils.BaseViewHolder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,7 +25,7 @@ public class RvCategoryAdapter extends BaseQuickAdapter<CategoryMuluBean.DataBea
     private OnTextViewClickLisener lisener =null;
     public static int curPosition =0;
     public RvCategoryAdapter( List<CategoryMuluBean.DataBean.ListBean> data) {
-        super(R.layout.category_adapter, data);
+        super(R.layout.category_adapter, data == null? new ArrayList<>():data);
     }
 
     @Override

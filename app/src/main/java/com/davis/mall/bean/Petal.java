@@ -5,6 +5,11 @@ public class Petal {
     private int resId;//资源id
     private String info;//资源描述
 
+    public Petal(int iconId, String iconName) {
+        this.resId = iconId;
+        this.info = iconName;
+    }
+
     public int getResId() {
         return resId;
     }

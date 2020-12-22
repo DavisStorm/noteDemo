@@ -10,6 +10,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.davis.mall.R;
 import com.davis.mall.utils.BaseViewHolder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,7 +25,7 @@ public class ImageHorizRvAdapter extends BaseQuickAdapter<String> {
 
     private int selectedPosition = 0;
     public ImageHorizRvAdapter(Context context, List<String> data, ImageHorizRvAdapter.onItemClickListener lisener) {
-        super(R.layout.adapter_img_horizen,data);
+        super(R.layout.adapter_img_horizen,data==null?new ArrayList<>():data);
         mContext = context;
         mLisener = lisener;
     }
